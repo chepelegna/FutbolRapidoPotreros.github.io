@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liga de Fútbol Rápido Potreros</title>
+<style>
+:root{--azul:#063d7b;--azul2:#082c59;--azul3:#e9f3ff;--oro:#f2b705;--blanco:#fff;--texto:#10233f;--gris:#667085}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:var(--texto)}
+header{position:sticky;top:0;z-index:20;background:rgba(6,61,123,.97);color:#fff;box-shadow:0 3px 14px #0002}
+.nav{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brand img{width:48px;height:48px;object-fit:contain;background:white;border-radius:50%}
+.brand small{display:block;font-weight:600;opacity:.8}
+nav a{color:#fff;text-decoration:none;font-size:14px;font-weight:700;margin-left:18px}
+.hero{background:linear-gradient(110deg,#062c59eF,#0a5ca9dc),url("https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=1800&q=80") center/cover}
+.hero-inner{max-width:1180px;margin:auto;padding:70px 20px;color:#fff;display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center}
+.eyebrow{display:inline-block;background:var(--oro);color:#17202b;padding:7px 12px;border-radius:20px;font-weight:900;font-size:12px}
+h1{font-size:clamp(38px,6vw,68px);line-height:.98;margin:18px 0 12px}.hero p{font-size:18px;line-height:1.6;max-width:680px}
+.hero-logo{justify-self:end;background:#fff;border-radius:24px;padding:18px;box-shadow:0 18px 50px #0005}.hero-logo img{width:min(280px,55vw);display:block}
+.btn{display:inline-block;margin-top:10px;background:#fff;color:var(--azul2);padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:900}
+main{max-width:1180px;margin:auto;padding:45px 20px}.title{margin-bottom:18px}.title h2{margin:0;font-size:32px}.sub{color:var(--gris);font-size:14px;margin-top:5px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 6px 22px #10233f0d;border:1px solid #e7edf5}.num{font-size:30px;font-weight:900;color:var(--azul)}.lbl{font-size:13px;color:var(--gris);margin-top:4px}
+.panel{background:#fff;border-radius:16px;padding:22px;box-shadow:0 6px 22px #10233f0d;border:1px solid #e7edf5;margin-top:28px}
+.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:820px}th{background:var(--azul2);color:#fff;padding:13px 8px;font-size:12px}td{padding:12px 8px;border-bottom:1px solid #e4eaf2;text-align:center;font-weight:600}td:nth-child(2){text-align:left;font-weight:800}tr.top{background:#eef6ff}tr.top td:first-child{border-left:5px solid var(--oro)}.points{font-size:18px;color:var(--azul2);font-weight:900}.pos{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#edf2f7}.top .pos{background:var(--oro)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.match{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:15px 0;border-bottom:1px solid #e6ebf1}.team{width:40%;font-weight:800}.team:last-child{text-align:right}.vs{text-align:center;font-weight:900;color:var(--azul);font-size:18px}.pending{background:#f8fafc;border:1px dashed #b9c4d2;padding:18px;border-radius:10px;color:var(--gris);line-height:1.5}
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news article{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e7edf5}.news-img{height:145px;background-size:cover;background-position:center}.news-body{padding:17px}.news-body h3{margin:0 0 7px}.news-body p{font-size:14px;color:var(--gris);line-height:1.5}
+footer{background:#071d38;color:#dce8f7;padding:35px 20px;margin-top:35px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-logo{justify-self:start}.cards{grid-template-columns:repeat(2,1fr)}.grid,.news{grid-template-columns:1fr}nav{display:none}.brand small{display:none}}
+@media(max-width:480px){.cards{grid-template-columns:1fr 1fr}.hero-inner{padding-top:50px}.hero-logo img{width:210px}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="brand"><img src="logo-potreros.png" alt="Logo Liga de Fútbol Rápido Potreros"><div>LIGA POTREROS<small>Fútbol rápido</small></div></div>
+<nav><a href="#inicio">Inicio</a><a href="#tabla">Tabla de puntos</a><a href="#resultados">Resultados</a><a href="#jornadas">Jornadas</a><a href="#noticias">Noticias</a></nav>
+</div>
+</header>
+
+<section class="hero" id="inicio">
+<div class="hero-inner">
+<div>
+<span class="eyebrow">TEMPORADA 2026</span>
+<h1>Liga de Fútbol Rápido Potreros</h1>
+<p>Resultados, tabla de puntos, jornadas y noticias de nuestra liga. Información presentada a partir de la tabla oficial proporcionada.</p>
+<a class="btn" href="#tabla">Consultar tabla de puntos ↓</a>
+</div>
+<div class="hero-logo"><img src="logo-potreros.png" alt="Escudo de Potreros"></div>
+</div>
+</section>
+
+<main>
+<section>
+<div class="title"><h2>La liga en números</h2><div class="sub">Datos tomados de la tabla proporcionada</div></div>
+<div class="cards">
+<div class="card"><div class="num">12</div><div class="lbl">Equipos</div></div>
+<div class="card"><div class="num">18</div><div class="lbl">Juegos máximos registrados</div></div>
+<div class="card"><div class="num">39</div><div class="lbl">Puntos del líder</div></div>
+<div class="card"><div class="num">214</div><div class="lbl">Goles anotados en la tabla</div></div>
+</div>
+</section>
+
+<section class="panel" id="tabla">
+<div class="title"><h2>Tabla de puntos</h2><div class="sub">Tabla proporcionada · primeros 8 equipos destacados</div></div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>#</th><th>Equipos</th><th>JJ</th><th>JG</th><th>JP</th><th>JE</th><th>GA</th><th>GE</th><th>DG</th><th>Puntos</th></tr></thead>
+<tbody>
+<tr class="top"><td><span class="pos">1</span></td><td>Halcones de la Ex Hacienda</td><td>17</td><td>12</td><td>2</td><td>3</td><td>56</td><td>23</td><td>33</td><td class="points">39</td></tr>
+<tr class="top"><td><span class="pos">2</span></td><td>Zapote de Parras</td><td>18</td><td>10</td><td>4</td><td>4</td><td>41</td><td>27</td><td>14</td><td class="points">34</td></tr>
+<tr class="top"><td><span class="pos">3</span></td><td>Aztecas FC</td><td>17</td><td>10</td><td>3</td><td>4</td><td>37</td><td>27</td><td>10</td><td class="points">34</td></tr>
+<tr class="top"><td><span class="pos">4</span></td><td>Atarjea</td><td>18</td><td>9</td><td>3</td><td>6</td><td>43</td><td>31</td><td>12</td><td class="points">33</td></tr>
+<tr class="top"><td><span class="pos">5</span></td><td>FC La Puerta de AC</td><td>18</td><td>10</td><td>6</td><td>2</td><td>45</td><td>31</td><td>14</td><td class="points">32</td></tr>
+<tr class="top"><td><span class="pos">6</span></td><td>Leone RN</td><td>18</td><td>8</td><td>7</td><td>3</td><td>45</td><td>29</td><td>16</td><td class="points">27</td></tr>
+<tr class="top"><td><span class="pos">7</span></td><td>Crucitas FC</td><td>17</td><td>7</td><td>6</td><td>4</td><td>32</td><td>27</td><td>5</td><td class="points">25</td></tr>
+<tr class="top"><td><span class="pos">8</span></td><td>Real Lerma FC</td><td>18</td><td>5</td><td>9</td><td>4</td><td>22</td><td>40</td><td>-18</td><td class="points">19</td></tr>
+<tr><td><span class="pos">9</span></td><td>Potreros</td><td>18</td><td>4</td><td>9</td><td>5</td><td>19</td><td>34</td><td>-15</td><td class="points">17</td></tr>
+<tr><td><span class="pos">10</span></td><td>La Calera</td><td>18</td><td>4</td><td>10</td><td>4</td><td>34</td><td>49</td><td>-15</td><td class="points">16</td></tr>
+<tr><td><span class="pos">11</span></td><td>Renovación Tabiqueros</td><td>18</td><td>3</td><td>10</td><td>5</td><td>22</td><td>45</td><td>-23</td><td class="points">14</td></tr>
+<tr><td><span class="pos">12</span></td><td>Unión La Puerta</td><td>18</td><td>2</td><td>14</td><td>2</td><td>22</td><td>54</td><td>-32</td><td class="points">8</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="grid">
+<section class="panel" id="resultados">
+<div class="title"><h2>Resultados</h2><div class="sub">Espacio para registrar cada partido</div></div>
+<div class="pending"><b>Resultados pendientes de captura.</b><br>La imagen proporcionada contiene la tabla acumulada, pero no incluye los marcadores individuales. En cuanto se proporcionen, esta sección puede llenarse por jornada.</div>
+</section>
+
+<section class="panel" id="jornadas">
+<div class="title"><h2>Jornadas</h2><div class="sub">Calendario de partidos</div></div>
+<div class="pending"><b>Calendario pendiente de captura.</b><br>Podemos agregar Jornada 1, Jornada 2, etc., con fecha, hora, cancha, equipos y marcador.</div>
+</section>
+</div>
+
+<section id="noticias" style="margin-top:28px">
+<div class="title"><h2>Noticias y avisos</h2><div class="sub">Sección preparada para publicar información de la liga</div></div>
+<div class="news">
+<article><div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80')"></div><div class="news-body"><h3>Tabla de puntos actualizada</h3><p>Consulta la clasificación de los 12 equipos de la Liga de Fútbol Rápido Potreros.</p></div></article>
+<article><div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80')"></div><div class="news-body"><h3>Próximas jornadas</h3><p>Aquí se podrán publicar horarios, canchas y enfrentamientos de cada jornada.</p></div></article>
+<article><div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=80')"></div><div class="news-body"><h3>Noticias de la liga</h3><p>Espacio para reconocimientos, avisos, goleadores, fotografías y comunicados.</p></div></article>
+</div>
+</section>
+</main>
+
+<footer><div class="foot"><div><b>⚽ Liga de Fútbol Rápido Potreros</b><br>Pasión, competencia y comunidad.</div><div>Potreros · Pénjamo, Guanajuato</div></div></footer>
+</body>
+</html>
